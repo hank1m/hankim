@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white font-sans;
+  background: linear-gradient(145deg, #2b1f1a, #11100e, #0a0a0a);
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4//8/AwAI/AL+NEzzRQAAAABJRU5ErkJggg==");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  mix-blend-mode: screen;
+  opacity: 0.08;
+}
